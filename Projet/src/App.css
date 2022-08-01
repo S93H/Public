@@ -1,0 +1,299 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Global Variable */
+
+:root {
+    --main: #f01027;
+    --black:#000;
+    --white: #fff;
+    --font_family: "Open Sans", sans-serif;
+}
+
+*{
+    transition: 0.3s;
+    font-family: var(--font_family);
+}
+
+*::selection{
+    background: var(--main);
+    color: var(--white) !important;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main);
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+/* Navbar Start*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid var(--white);
+}
+
+.navbar.active {
+    background: var(--black);
+}
+
+.navbar-brand {
+    font-size: 3em;
+    color: var(--white) !important;
+    padding: 0px 60px;
+}
+
+.navbar-brand span {
+    font-size: 1.6em;
+    color: var(--main) !important;
+    font-weight: 600;
+}
+
+.navbar-nav {
+    padding: 0px 60px;
+    margin-top: 40px;
+}
+
+.nav-link {
+    color: var(--white) !important;
+    margin-left: 8px;
+    font-weight: bolder;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: var(--main) !important;
+}
+
+.nav-link::after {
+    content: "";
+    background: var(--main);
+    height: 2px;
+    width: 0px;
+    display: block;
+    position: absolute;
+    transition: .3s;
+}
+
+.nav-link:hover::after {
+    width: 40px;
+}
+
+/* Navbar End */
+
+/* Header Start*/
+
+.header {
+    position: relative;
+}
+
+.header img {
+    height: 100vh;
+    width: 100%;
+}
+
+.header .Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--black);
+    opacity: 0;
+}
+
+.header .Content {
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--white) !important;
+    background: var(--black);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+.header .Content h6 {
+    font-size: 50px;
+}
+
+/* Header End */
+
+/* Custom Section Start */
+
+.custom {
+    margin: 200px auto;
+}
+
+.custom .box {
+    overflow: hidden;
+}
+
+.custom img {
+    height: 400px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+.custom img:hover {
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/* Custom Section End */
+
+/* Details Section Start */
+
+.details {
+    margin-bottom: 200px;
+}
+
+.details #B{
+    font-size: 1.6em;
+    color: var(--main) !important;
+    font-weight: 600;
+}
+
+.details .col-sm-5 h6 {
+    font-size: 70px;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+.details .col-sm-5 p {
+    margin: 35px auto;
+}
+
+.details .btn {
+    background: var(--black);
+    color: var(--white) !important;
+    padding: 5px 150px;
+    border: 2px solid var(--main);
+    border-radius: 30px;
+}
+
+.details .btn:hover {
+    background: var(--main);
+    transition: .2s;
+    color: var(--black);
+}
+
+ #imgdetail img {
+    height: 800px;
+}
+
+@media screen and (max-width: 1200px){
+    #imgdetail img {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #imgdetail img {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #imgdetail img {
+        height: 400px;
+    }
+}
+
+
+
+/* Details Section End */
+
+/* Teams Section Start */
+
+.teams {
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.teams .col-sm-4 {
+    overflow: hidden;
+    position: relative;
+}
+
+.teams img {
+    height: 500px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.teams img:hover {
+    -o-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
+.teams .content {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white) !important;
+    width: 92%;
+    background: var(--black);
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+}
+
+.teams .col-sm-4:hover .content {
+    opacity: 1;
+}
+
+.teams .content h6 {
+    font-size: 37px;
+    font-weight: 600;
+}
+
+/* Footer Start */
+
+footer {
+    background: var(--black);
+    padding: 20px;
+}
+
+footer .container{
+    border-bottom: 2px solid var(--white);
+    color: var(--white) !important;
+}
+
+footer .container h6 {
+    font-weight: 600;
+    font-size: 40px;
+    margin: 20px auto;
+}
+
+footer .container i {
+    display: block;
+    margin: 10px auto;
+    color: var(--white);
+}
+
+footer .container a {
+    color: var(--white) !important;
+    text-decoration: none !important;
+    padding-left: 20px;
+}
+
+footer .container i a:hover {
+    color: var(--main) !important;
+    padding-left: 25px;
+}
