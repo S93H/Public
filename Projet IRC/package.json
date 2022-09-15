@@ -1,0 +1,28 @@
+{
+  "name": "w-jsc-502-stg-2-1-irc-sylvain.hutt",
+  "version": "1.0.0",
+  "description": "Realtime Chat",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpitechWebAcademiePromo2023/W-JSC-502-STG-2-1-irc-sylvain.hutt.git"
+  },
+  "author": "Sylvain HUTT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EpitechWebAcademiePromo2023/W-JSC-502-STG-2-1-irc-sylvain.hutt/issues"
+  },
+  "homepage": "https://github.com/EpitechWebAcademiePromo2023/W-JSC-502-STG-2-1-irc-sylvain.hutt#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "moment": "^2.29.3",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

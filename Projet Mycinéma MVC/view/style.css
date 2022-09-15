@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../view/img/cinema.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    background-color: rgba(255,0,0,0.25);
+    color: white;
+    height: 13rem;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1vw;
+}
+
+nav p {
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.titre {
+    height: 3em;
+    width: 30em;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.section iframe {
+    margin-top: 5vh;
+    width: 50em;
+    height: 25em;
+    border-radius: 10px;
+}
+
+.box3 {
+    text-align: center;
+}
+
+
+.box3 h1 {
+    margin-top: 0;
+    font-family: 'Monoton', cursive;
+    font-size: 3vw;
+    margin-bottom: 0;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    height: 2em;
+    border-radius: 20px;
+    border: none;
+}
+
+.bla {
+    color: orange;
+}
+
+.bli {
+    color: green;
+}
+
+.blo {
+    color: brown;
+}
+
+.h1 {
+    font-size: xx-large;
+}
+
+.bodymember {
+    background-color: white;
+    background-image: none;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}

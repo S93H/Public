@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    background-image: url(../front/img/reunion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+nav {
+    background-color: white;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav input {
+    height: 2em;
+    margin-bottom: 2em;
+    border: 2px solid black;
+    width: 30em;
+    border-radius: 20px;
+}
+nav button {
+    width: 10em;
+    height: 3em;
+    border-radius: 20px;
+    border: none;
+}
